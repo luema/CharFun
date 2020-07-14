@@ -1,4 +1,4 @@
-Package: CharFun
+Package: MyCharFun
 Type: Package
 Title: Numerical Computation Cumulative Distribution Function and Probability Density Function from Characteristic Function
 Version: 0.1.0

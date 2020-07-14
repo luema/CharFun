@@ -528,10 +528,12 @@ cf2DistGP <-
         x = x,
         y = pdf,
         main = "PDF Specified by the Characteristic Function",
+        sub  = str_glue(str_glue("Mean = ", toString(round(result$xMean, 2))), str_glue("Variance = ", toString(round(result$xStd^2, digits = 2))), .sep = ",  "),
         xlab = "x",
         ylab = "pdf",
         type = "l",
-        col = "blue"
+        col = "blue",
+        cex.sub = 0.90
       )
       grid()
 
@@ -539,10 +541,12 @@ cf2DistGP <-
         x = x,
         y = cdf,
         main = "CDF Specified by the Characteristic Function",
+        sub  = str_glue(str_glue("Mean = ", toString(round(result$xMean, 2))), str_glue("Variance = ", toString(round(result$xStd^2, digits = 2))), .sep = ",  "),
         xlab = "x",
         ylab = "cdf",
         type = "l",
-        col = "blue"
+        col = "red",
+        cex.sub = 0.90
       )
       grid()
     }
